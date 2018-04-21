@@ -97,7 +97,7 @@ $scope.showdetails=function(){
 
       ariaDescribedBy: 'modal-body',
 
-      templateUrl:'animaldata.html',
+      templateUrl:'animal_data.html',
 
       controller:'datacontroller',
 
