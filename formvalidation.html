@@ -18,8 +18,14 @@
 
   <body ng-app class="body">
 
-<div class="container" id="mainform">
 
+
+
+<div class="container" id="mainform" style="width: 800px;">
+
+
+<div class="card">
+  <div class="card-body">
 <form  class="form" name="person" novalidate>
 	
 
@@ -42,7 +48,7 @@
 
         </select>
 
-
+        <small ng-show="person.event.touched && person.event.$invalid" id="err">*Please select a proper event</small>
 
 
       </div>
@@ -83,7 +89,8 @@
 
 
 </form>
-
+</div>
+</div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
