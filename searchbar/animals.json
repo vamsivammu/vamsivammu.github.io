@@ -1,0 +1,135 @@
+[
+  {
+    "index": 1,
+    "picture": "https://a-z-animals.com/media/animals/images/470x370/aardvark_1.jpg",
+    "name": "Aardvark",
+    "about": "Aardvarks are small pig-like mammals that are found inhabiting a wide range of different habitats throughout Africa, south of the Sahara\n.They are mostly solitary and spend their days sleeping in underground burrows to protect them from the heat of the African sun, emerging in the cooler evening to search for food. Their name originates from the Afrikaans language in South Africa and means Earth Pig, due to their long snout and pig-like body. Aardvarks are unique among animals as they are the only surviving species in their animal family.Until recently it was widely believed that they were most closely related to other insectivores such as armadillos and pangolins but this is not the case with their closest living relatives actually thought to be elephants."
+  },
+
+  {
+    "index": 2,
+    "picture": "https://a-z-animals.com/media/animals/images/470x370/abyssinian2.jpg",
+    "name": "Abyssinian",
+    "about": "The Abyssinian Cat is thought to be one of the oldest breeds of domestic Cat in the world, as the first domestication of the Abyssinian Cat occurred in Ancient Egyptian times. It is thought that Abyssinian Cats were bought and sold on the banks of the River Nile by traders, where the African Wild Cats (the ancestors of all domestic Cats) lived in their native habitats. Abyssinian Cats are most easily identified by their 'ticked' fur which gives their coat a mottled appearance."
+  },
+
+  {
+    "index": 3,
+    "picture": "https://a-z-animals.com/media/animals/images/470x370/afghan_hound1.jpg",
+    "name": "Afghan Hound",
+    "about": "The Afghan Hound is thought to be one of the oldest of all domestic Dog breeds, with the first records of the Afghan Hound dating back to 4,000 BC. The fast and agile nature of this Dog meant that they made excellent hunters of small game in their native Afghanistan, most commonly hunting Deer, Goats, Gazelle and Wild Boar along with seeing off larger predators such as Wolves and Snow Leopards. Their gentle nature also made this elegant sight-hound a doting shepherd, fearlessly protecting livestock from hungry predators. This beautiful but gently natured watchdog was brought to Britain in the early 1920s and its entry to the USA followed in 1926. The elegance of the Afghan Hound meant that they quickly became highly desirable Dogs, both as pets and for show."
+  },
+
+
+  {
+   "index": 4,
+   "picture": "https://a-z-animals.com/media/animals/images/470x370/african_penguin3.jpg",
+   "name": "African Penguin",
+   "about": "The African Penguin is a small to medium sized Penguin species that is found along the coast of South Africa and on a number of its surrounding islands. The African Penguin is thought to be most closely related to the Humboldt and Magellanic Penguins found in southern South America, and the Galapagos Penguin found in the Pacific Ocean near the Equator. The African Penguin was named for the fact that it is the only species of Penguin that is found breeding on the African Coast, and it is believed to be one of the first Penguin species to be discovered by humans."
+
+  },
+  {
+    "index": 5,
+    "picture": "https://a-z-animals.com/media/animals/images/470x370/butterfly12.jpg",
+    "name": "Butterfly",
+    "about": "The butterfly can be found in most countries in the world, but there tend to be more butterflies in warmer climates. The butterfly is a type of insect that feeds on flower nectar through its long and curled straw-like tongue."
+  },
+  {
+    "index": 6,
+    "picture": "https://a-z-animals.com/media/animals/images/470x370/dog5.jpg",
+    "name": "Dog",
+    "about": "Dogs are thought to have been first domesticated in East Asia thousands of years ago. People primarily used dogs for guarding the hunters and areas of land."
+  },
+
+{
+    "index": 7,
+    "picture": "https://a-z-animals.com/media/animals/images/470x370/buffalo2.jpg",
+    "name": "Buffalo",
+    "about": "The buffalo is also known as the African buffalo and the cape buffalo, as the buffalo is found in large herds across Africa but the buffalo is more prominent in South Africa."
+  },
+{
+    "index": 8,
+    "picture": "https://a-z-animals.com/media/animals/images/470x370/bat4.jpg",
+    "name": "Bat",
+    "about": "Bats are found all around the world and there are hundreds of different species of bat, living in caves and forests, particularly in the Southern Hemisphere. The bumblebee bat found in the jungles of Thailand, is the smallest mammal in the world and weighs less than a penny!"
+},
+{
+"index":9 ,
+"picture": "https://a-z-animals.com/media/animals/images/470x370/pig.jpg",
+"name": "Pig",
+"about":"The pig was allegedly domesticated as early as 9,000 BC from the wild boar, which is found in the forests of Asia and Europe. The pig was used for meat, leather and the pig hair was often used to make brushes."
+},
+{
+"index":10 ,
+"picture": "https://a-z-animals.com/media/animals/images/470x370/cow11.jpg",
+"name": "Cow",
+"about":"Cows are raised in many different countries around the world, mainly for the cow's natural resources such as milk, meat and leather. In India, the cow is seen as a sacred animal."
+},
+{
+"index":11 ,
+"picture": "https://a-z-animals.com/media/animals/images/470x370/horse4.jpg",
+"name": "Horse",
+"about":"Horses evolved over 50 million years from small many toed animals to the big beautiful, single-toed horses of today. The modern horse has been domesticated around the world for many reasons including transportation and battle."
+},
+{
+  "index": 12,
+  "picture": "https://a-z-animals.com/media/animals/images/470x370/sheep9.jpg",
+  "name": "Sheep",
+  "about":"It is thought that the domestic sheep originated from central Europe and Asia. Today, there are at least 1 billion sheep on the planet, with commercial sheep farming most commonly found in New Zealand, Australia, parts of North America and the United Kingdom."
+},
+{
+  "index": 13,
+  "picture": "https://a-z-animals.com/media/animals/images/470x370/ant.jpg",
+  "name": "Ant",
+  "about":"The ant is a small sized invertebrate that is found all around the world, with the exception of the polar regions including the Arctic Circle and Antarctica. As with many other species of insect, there are numerous ant species inhabiting many different environments all around the world."
+},
+{
+  "index": 14,
+  "picture": "https://a-z-animals.com/media/animals/images/470x370/deer.jpg",
+  "name": "Deer",
+  "about":"The deer is found in the forests of Europe, Asia and North America, where most deer grow to an average of about 1 meter tall. Deer-like creatures are found in Africa, however they are all antelope and not deer."
+},
+{
+  "index":15 ,
+  "picture": "https://a-z-animals.com/media/animals/images/470x370/monkey9.jpg",
+  "name": "Monkey",
+  "about":"Monkeys are found naturally in the jungles and forests of the Southern Hemisphere. There are two ways to classify a monkey, the old world monkey (Asia and Africa) and the new world monkey (South America)."
+},
+{
+  "index": 16,
+  "picture": "https://a-z-animals.com/media/animals/images/470x370/chimpanzee1.jpg",
+  "name": "Chimpanzee",
+  "about":"The Chimpanzee is a species of ape that is natively found in a variety of different habitats in western and central Africa. Closely related to other great apes including Orang-Utans and Gorillas, the Chimpanzee is also very closely related to Humans as we share 98% of the same DNA. They are thought to be the most intelligent animals on the planet after people and are not only known to show emotion but they are also great problem-solvers and are even known to not just use, but also make tools to help them to survive more successfully in their surroundings. "
+},
+{
+  "index": 17,
+  "picture": "https://a-z-animals.com/media/animals/images/470x370/gorilla4.jpg",
+  "name": "Gorilla",
+  "about":"Gorillas are the biggest of the world's primates and live in the forests in select parts of Africa. The gorilla population is sadly much lower than it used to be meaning that gorillas are an endangered species."
+},
+{
+
+"index":18,
+"picture":"https://a-z-animals.com/media/animals/images/470x370/goat1.jpg",
+"name":"Goat",
+"about":"Goats originated from the mountainous areas of west Asia and eastern Europe, grazing on hillsides and plains. Modern day common goats are known as domesticated goats and are thought to be very closely related to a sheep."
+},
+{
+
+"index":19,
+"picture":"https://a-z-animals.com/media/animals/images/470x370/donkey3.jpg",
+"name":"Donkey",
+"about":"Donkeys were supposedly domesticated around 5000 years ago in the north east of Africa from the Somali wild ass. The domestication if donkeys soon spread across the globe, with people mainly using the donkeys to help carry heavy loads and transport goods long distances. They are anatomically normal and show normal breeding behaviour, so hybrids should be gelded as early as possible to avoid studdy behaviour."
+},
+
+{
+
+"index":20,
+"picture":"https://a-z-animals.com/media/animals/images/470x370/cat_14.jpg",
+"name":"Cat",
+"about":"Cats (domestic cats) seem to date back to around ancient Egyptian times, when they were worshipped and heralded as sacred animals to the Gods in Egypt. The cat has since become an honoured and valued member of family homes worldwide."
+}
+
+
+
+]
