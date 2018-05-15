@@ -1,0 +1,26 @@
+.ng-touched.ng-invalid{
+border: 2px solid red;
+
+}
+.body{
+
+	background-color: #46fcde;
+}
+
+#mainform{
+
+
+background-color: lightgray;
+padding-top: 200px;
+padding-bottom: 200px;
+padding-left: 100px;
+border-radius: 10px;
+}
+
+#err{
+
+color: red;
+float:none;
+
+}
+
