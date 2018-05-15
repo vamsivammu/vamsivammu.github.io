@@ -11,20 +11,27 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
-
-
-<script src="formvalidation.js"></script>
 </head>
 
   <body ng-app class="body">
 
+<div class="navbar navbar-expand-sm bg-dark navbar-dark " id="navigation" style="background-color: blue;">
+
+ <a class="navbar-brand" href="formvalidation.html"><h2>Reset</h2></a>
 
 
+
+</div>
+<br><br>
 
 <div class="container" id="mainform" style="width: 800px;">
 
 
 <div class="card">
+  
+<h3 class="card-header">Contact Form</h3>
+
+
   <div class="card-body">
 <form  class="form" name="person" novalidate>
 	
@@ -63,7 +70,7 @@
     	   
         <label ><b>Name:</b></label>
 
-        <input  class="form-control" placeholder="Type your name" ng-model="name" name="name" type="text" ng-required="true">
+        <input  class="form-control" placeholder="Type your name" ng-model="name" name="name" type="text" ng-pattern="fullname" ng-required="true">
 
         <small  ng-show="person.name.$touched && person.name.$invalid" id="err">*Please type your name</small>
 
@@ -78,7 +85,7 @@
     
             <label><b>Email:</b></label>
   
-            <input  type="email" class="form-control "  placeholder="Type your email" name="email" ng-required="true" ng-model="email">
+            <input  type="email" class="form-control "  placeholder="Type your email" name="email" ng-required="true" ng-pattern="electronicmail" ng-model="email">
 
             <small ng-show="person.email.$touched && person.email.$invalid" id="err">*Please type a valid e-mail id</small>
 
@@ -87,6 +94,23 @@
 
     </div>
 
+    <div class="form-group" id="phonenumber">
+      
+        <div class="col-sm-5">
+
+            <label> <b>Enter the Phone Number:</b></label>
+
+            <input  class="form-control"  placeholder="Type your Phone NUmber" name="phonenumber" ng-model="phonenumber" ng-pattern="mobilenumber" ng-required="true">
+            <small ng-show="person.phonenumber.$touched && person.phonenumber.$invalid" id="err">Please enter a Valid Mobile Number</small>
+
+
+        </div>
+
+
+
+
+
+    </div>
 
 </form>
 </div>
@@ -94,6 +118,11 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<!-- <script src="p5.min.js"></script>
+<script src="evolution.js"></script>
+    <script src="evolsteering.js"></script>
+ -->
+<script src="formvalidation.js"></script>
 
   </body>
 
