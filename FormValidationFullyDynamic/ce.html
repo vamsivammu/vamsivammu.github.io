@@ -118,25 +118,22 @@
         </div>
 
 </div>
-    <div class="form-group"  id="ce">
+ 
+<div class="form-group"  id="ce">
       
-      <div class="col-sm-5">
+    <div class="col-sm-5">
 
         <label><b>Which specialization course  do you want to take in Civil Engineering? <b id="err">*</b></b></label>
-        <input type="text" name="ce" ng-pattern="cepattern" ng-model="cebuild" placeholder="Mention the specialization courses" ng-focus="cefocus=true;noncefocus=false" ng-blur="cefocus=false;noncefocus=true" ng-required="true">
+        <input type="text" class="form-control" name="ce" ng-pattern="cepattern" ng-model="cebuild" placeholder="Mention the specialization courses" ng-focus="cefocus=true;noncefocus=false" ng-blur="cefocus=false;noncefocus=true" ng-required="true">
         <small ng-show="person.ce.$error.required && person.ce.$dirty && noncefocus" id="err">*This is a required field</small>
         <small ng-show="person.ce.$dirty && person.ce.$invalid && cefocus" id="err">*Please enter a Valid Course</small>
         <small ng-show="person.ce.$pristine && person.ce.$touched" id="err">*This is a required field</small>
-            
       
-      </div>
+	</div>
+    
+</div>
 
-
-
-    </div>
-
-<br>
-     
+	<br>
     <div class="form-group" >
     	
     	<div class="col-sm-5">
@@ -150,31 +147,14 @@
 
 	<div class="form-group">
 
-
-     	<div class="col-sm-12" id="finalerr">
+     		<div class="col-sm-12" id="finalerr">
      		
      		<h4 ng-show="buttonpressed && finalerror" id ="err">Please check your form</h4>
 
+     		</div>
      	</div>
-     	
-
-     </div>
-
-     <!-- <div class="form-group">
-
-
-     	<div class="col-sm-5" id="completed">
-     		
-     		<h6 ng-show="buttonpressed && correct" >Form Submitted Successfully</h6>
-
-     	</div>
-     	
 
      
-
-
-    </div>
- -->
 </form>
 </div>
 </div>
