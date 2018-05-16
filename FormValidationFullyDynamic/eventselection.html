@@ -1,0 +1,59 @@
+<div class="card">
+
+  <h3 class="card-header">Event Selection</h3>
+
+<div class="card-body">
+<form class="form" name="person" >
+
+<div class="form-group" >
+
+      <div class="col-sm-5">
+
+        <label><b>Select an Event: <b id="err">*</b></b></label>
+
+
+        <select class="form-control" ng-model="eventname" name="event" ng-focus="eventfocus=true;noneventfocus=false" ng-blur="eventfocus=false;noneventfocus=true" ng-required="true">
+
+          <option id="e1"><b>CSE</b></option>
+
+          <option id="e2"><b>CE</b></option>
+
+          <option id="e3"><b>ED</b></option>
+
+          <option id="e4"><b>EE</b></option>
+
+        </select>
+
+        <small ng-show="person.event.$error.required && person.event.$dirty && noneventfocus" id="err">*This is a required field</small>
+        <small ng-show="person.event.$dirty && person.event.$invalid && eventfocus" id="err">*Please select a proper event</small>
+        <small ng-show="person.event.$pristine && person.event.$touched" id="err">*This is a required field</small>
+
+</div>
+      </div>
+
+      <div class="form-group" >
+      
+      <div class="col-sm-5">
+        
+        <button class="btn btn-default"  ng-click="submitevent(person.event.$valid,eventname)">Submit</button>
+
+
+      </div>
+
+    </div>
+
+  <div class="form-group">
+
+
+      <div class="col-sm-12" id="finalerr">
+        
+        <h4 ng-show="buttonpressed && finalerror" id ="err">Please check your form</h4>
+
+      </div>
+      
+
+     </div>
+
+
+    </div>
+</div>
