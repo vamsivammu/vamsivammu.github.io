@@ -13,7 +13,7 @@
 
 </head>
 
-  <body ng-app class="body">
+  <body ng-app="formvalidate" ng-controller="formcontroller" class="body">
 
 <div class="navbar navbar-expand-sm bg-dark navbar-dark " id="navigation" style="background-color: blue;">
 
@@ -28,34 +28,36 @@
 
 
 <div class="card">
-  
+
 <h3 class="card-header">Contact Form</h3>
 
 
   <div class="card-body">
 <form  class="form" name="person" novalidate>
-	
+
 
     <div class="form-group" >
-      
+
       <div class="col-sm-5">
-        
-        <label><b>Select an Event:</b></label>  
+
+        <label><b>Select an Event:</b></label>
 
 
-        <select class="form-control" ng-model="event" name="event" ng-required="true">
-          
+        <select class="form-control" ng-model="event" name="event" ng-pattern="eventpattern" ng-focus="eventfocus=true;noneventfocus=false" ng-blur="eventfocus=false;noneventfocus=true" ng-required="true">
+
           <option id="e1"><b>Event 1</b></option>
-          
+
           <option id="e2"><b>Event 2</b></option>
-          
+
           <option id="e3"><b>Event 3</b></option>
-          
+
           <option id="e4"><b>Event 4</b></option>
 
         </select>
 
-        <small ng-show="person.event.touched && person.event.$invalid" id="err">*Please select a proper event</small>
+        <small ng-show="person.event.$error.required && person.event.$dirty && noneventfocus" id="err">*This is a required field</small>
+        <small ng-show="person.event.$dirty && person.event.$invalid && eventfocus" id="err">*Please select a proper event</small>
+        <small ng-show="person.event.$pristine && person.event.$touched" id="err">*This is a required field</small>
 
 
       </div>
@@ -67,43 +69,67 @@
     <div class="form-group" id="name">
 
       <div class="col-sm-5">
-    	   
+
         <label ><b>Name:</b></label>
 
-        <input  class="form-control" placeholder="Type your name" ng-model="name" name="name" type="text" ng-pattern="fullname" ng-required="true">
+        <input  class="form-control" placeholder="Type your name" ng-model="name" name="name" type="text" ng-focus="namefocus=true;nonnamefocus=false" ng-blur="namefocus=false;nonnamefocus=true" ng-pattern="fullname" ng-required="true">
 
-        <small  ng-show="person.name.$touched && person.name.$invalid" id="err">*Please type your name</small>
+        <small ng-show="person.name.$error.required && person.name.$dirty && nonnamefocus" id="err">*This is a required field</small>
+        <small ng-show="person.name.$dirty && person.name.$invalid && namefocus" id="err">*Please enter a Valid Name</small>
+        <small ng-show="person.name.$pristine && person.name.$touched" id="err">*This is a required field</small>
 
       </div>
 
     </div>
 
 
+        <div class="form-group" id="dob">
+
+          <div class="col-sm-5">
+
+            <label ><b>Date of Birth:</b></label>
+
+            <input  class="form-control" placeholder="dd-mm-yyyy" ng-model="dob" name="dob" ng-focus="dobfocus=true;nondobfocus=false" ng-blur="dobfocus=false;nondobfocus=true" ng-pattern="dateofbirth" ng-required="true">
+
+            <small ng-show="person.dob.$error.required && person.dob.$dirty && nondobfocus" id="err">*This is a required field</small>
+            <small ng-show="person.dob.$dirty && person.dob.$invalid && dobfocus" id="err">*Please enter a Valid Date of Birth</small>
+            <small ng-show="person.dob.$pristine && person.dob.$touched" id="err">*This is a required field</small>
+
+          </div>
+
+        </div>
+
+
+
     <div class="form-group" id="email" >
-        
+
         <div class="col-sm-5">
-    
+
             <label><b>Email:</b></label>
-  
-            <input  type="email" class="form-control "  placeholder="Type your email" name="email" ng-required="true" ng-pattern="electronicmail" ng-model="email">
 
-            <small ng-show="person.email.$touched && person.email.$invalid" id="err">*Please type a valid e-mail id</small>
+            <input  type="email" class="form-control "  placeholder="Type your email"  name="email" ng-required="true" ng-focus="emailfocus=true;nonemailfocus=false" ng-blur="emailfocus=false;nonemailfocus=true" ng-pattern="electronicmail" ng-model="email">
 
-   
+            <small ng-show="person.email.$error.required && person.email.$dirty && nonemailfocus" id="err">*This is a required field</small>
+            <small ng-show="person.email.$dirty && person.email.$invalid && emailfocus" id="err">*Please enter a Valid E-Mail ID</small>
+            <small ng-show="person.email.$pristine && person.email.$touched" id="err">*This is a required field</small>
+
+
 	       </div>
 
     </div>
 
     <div class="form-group" id="phonenumber">
-      
+
         <div class="col-sm-5">
 
             <label> <b>Enter the Phone Number:</b></label>
 
-            <input  class="form-control"  placeholder="Type your Phone NUmber" name="phonenumber" ng-model="phonenumber" ng-pattern="mobilenumber" ng-required="true">
-            <small ng-show="person.phonenumber.$touched && person.phonenumber.$invalid" id="err">Please enter a Valid Mobile Number</small>
-
-
+            <input  class="form-control"  placeholder="Type your Phone Number" name="phonenumber" ng-focus="numberfocus=true;nonnumberfocus=false" ng-blur="numberfocus=false;nonnumberfocus=true" ng-model="phonenumber" ng-pattern="mobilenumber" ng-required="true">
+            <small ng-show="person.phonenumber.$error.required && person.phonenumber.$dirty && nonnumberfocus" id="err">*This is a required field</small>
+            <small ng-show="person.phonenumber.$dirty && person.phonenumber.$invalid && numberfocus" id="err">*Please enter a Valid Mobile Number</small>
+            <small ng-show="person.phonenumber.$dirty && person.phonenumber.$invalid && nonnumberfocus" id="err">*Please enter a Valid Mobile Number</small>
+            <small ng-show="person.phonenumber.$pristine && person.phonenumber.$touched" id="err">*This is a required field</small>
+            <!-- <button class="form-control" ng-show="focus">submit</button> -->
         </div>
 
 
