@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html ng-app="example">
+
+<head>
+
+<title>Animal Search</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-animate.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-touch.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<!-- <link rel="stylesheet" href="saarang_searchbar.css">
+ -->
+<script src="saarang_searchbar.js"></script>
+
+</head>
+
+<body id="body">
+<div ng-controller="control">
+
+	<nav class="navbar navbar-expand-sm bg-dark justify-content-between">
+	
+		<div class="navbar-header">
+			
+			<a class="navbar-brand" href="#!/">Home</a>
+
+			<a class="navbar-brand" href="#!">Edit</a>
+
+			<a class="navbar-brand" href="#!">Contact</a>
+
+			<a class="navbar-brand" href="#!">Privacy&Policy</a>
+
+			<a class="navbar-brand" href="#!">Help</a>
+
+		</div>
+
+
+		<form class="form-inline my-2" >
+					<li class="nav-item dropdown">
+
+						<input type="text" class="form-control mr-sm-3 dropdown-toggle"  data-toggle="dropdown" name="search" placeholder="Type an animal name" ng-model="animal" ng-keyup="suggest($event,animal)">
+					
+					<div class="dropdown-menu">
+
+						<ul class="list-group" >
+
+						<li class="dropdown-item" ng-repeat="n in suggestions" ng-click="autocomplete(n)" id="suggestions" ><a onmouseover="style.color='red'" onmouseout="style.color='black'" id="vis">{{n}}</a>
+
+						</li>
+
+					</div>
+					
+					</li>
+
+					<button class="btn btn-primary" ng-click="showdetails()">Submit</button>
+
+			
+		</form>
+	
+	</nav>
+<!-- <div class="col-sm-2" style="float: right;" >
+
+						<ul class="list-group" ng-model="showornot" ng-hide="showornot" >
+
+						<li class="list-group-item" ng-repeat="n in suggestions" ng-click="autocomplete(n)" id="suggestions" ><a onmouseover="style.color='red'" onmouseout="style.color='black'" id="vis">{{n}}</a></li>
+
+						</ul>						
+</div>
+ -->
+</div>
+
+<!-- <div ng-view>
+	
+
+
+</div>
+ --><!-- <div class="container"  id="heading"  style="color:Blue">
+
+<p id='t' >Animal Search </p>
+
+</div>
+
+<form id="main" >
+
+<input type="submit" id="sub" class="btn btn-info" value="Submit"  ng-click="showdetails()" >
+
+<div id="search" class="container">
+
+<input type="text" id="value"  value="animal" ng-model="animal" ng-keyup=suggest($event,animal) class="form-control" placeholder="Type an Animal">
+
+</form>
+
+<ul class="list-group" ng-model="showornot" ng-hide="showornot" >
+
+<li class="list-group-item" ng-repeat="n in suggestions" ng-click="autocomplete(n)" id="suggestions" ><a onmouseover="style.color='red'" onmouseout="style.color='black'" id="vis">{{n}}</a></li>
+
+</ul>
+
+</div>
+
+<div id="result" >
+
+<p id="bio"> </p>
+
+ </div>
+ -->
+</body>
+
+</html>
