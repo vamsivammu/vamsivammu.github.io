@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CEA</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<script  > 
+
+
+let dpimg="http://media.comicbook.com/2018/04/deadpool-2-invisible-mutant-1103598-1280x0.jpeg"
+let aveimg="https://thumbor.forbes.com/thumbor/1280x868/https%3A%2F%2Fblogs-images.forbes.com%2Fscottmendelson%2Ffiles%2F2018%2F04%2Fmarvel_studios_avengers_infinity_war_official_trailer_7-1200x676.jpg"
+let bpimg="https://static3.srcdn.com/wordpress/wp-content/uploads/2018/02/Black-Panther-Wakanda-Civil-War.jpg"
+let dpvid="https://youtube.com/embed/D86RtevtfrA"
+let avevid="https://www.youtube.com/embed/6ZfuNTqbHE8"
+let bpvid="https://youtube.com/embed/dxWvtMOGAhw"
+let aveinfo="Avengers: Infinity War (also known as Avengers 3[7]) is a 2018 American superhero film based on the Marvel Comics superhero team the Avengers, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the sequel to 2012's The Avengers and 2015's Avengers: Age of Ultron, and the nineteenth film in the Marvel Cinematic Universe (MCU). The film is directed by Anthony and Joe Russo, written by Christopher Markus and Stephen McFeely, and features an ensemble cast including Robert Downey Jr., Chris Hemsworth, Mark Ruffalo, Chris Evans, Scarlett Johansson, Benedict Cumberbatch, Don Cheadle, Tom Holland, Chadwick Boseman, Paul Bettany, Elizabeth Olsen, Anthony Mackie, Sebastian Stan, Danai Gurira, Letitia Wright, Dave Bautista, Zoe Saldana, Josh Brolin, and Chris Pratt. In Avengers: Infinity War, the Avengers and the Guardians of the Galaxy attempt to stop Thanos from amassing the all-powerful Infinity Stones."
+let dpinfo="Deadpool is a 2016 American superhero film based on the Marvel Comics character of the same name, distributed by 20th Century Fox. It is the eighth installment of the X-Men film series, and the first standalone Deadpool film. Directed by Tim Miller from a screenplay by Rhett Reese and Paul Wernick, the film stars Ryan Reynolds in the title role alongside Morena Baccarin, Ed Skrein, T.J. Miller, Gina Carano, Brianna Hildebrand, and Stefan Kapičić. In Deadpool, Wade Wilson hunts the man who gave him mutant abilities, but also a scarred physical appearance, as the antihero Deadpool."
+let bpinfo="Black Panther is a 2018 American superhero film based on the Marvel Comics character of the same name. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the eighteenth film in the Marvel Cinematic Universe (MCU). The film is directed by Ryan Coogler, who co-wrote the screenplay with Joe Robert Cole, and stars Chadwick Boseman as T'Challa / Black Panther, alongside Michael B. Jordan, Lupita Nyong'o, Danai Gurira, Martin Freeman, Daniel Kaluuya, Letitia Wright, Winston Duke, Angela Bassett, Forest Whitaker, and Andy Serkis. In Black Panther, T'Challa returns home as king of Wakanda but finds his sovereignty challenged by a new adversary, in a conflict with global consequences."
+function updateimage(x){
+
+document.getElementById("tableimg").src=eval(x)
+
+}
+
+function updatevideo(y){
+
+document.getElementById("tablevid").src=eval(y)
+
+}
+
+function updateinfo(z){
+
+document.getElementById("tableinfo").innerHTML=eval(z)
+
+if(z=="aveinfo"){
+	document.getElementById("movietitle").innerHTML="Avengers"
+}else if(z=="bpinfo"){
+	document.getElementById("movietitle").innerHTML="BlackPanther"
+}else{
+	document.getElementById("movietitle").innerHTML="DeadPool"
+}
+
+}
+</script>
+<style >
+
+
+
+body{
+
+background-image: url('images.jpg') 
+}
+</style>
+
+</head>
+<body >
+
+<div class="container">
+
+<h4>Click on table cells to change the video and image</h4>
+	
+<table class="table table-bordered table-hover" >
+
+<thead>
+
+<tr>
+	<th style="border: 2px solid black">Name</th>
+	<th style="border: 2px solid black">Image</th>
+	<th style="border: 2px solid black">Video</th>
+	<th style="border: 2px solid black">Info</th>
+</tr>	
+
+</thead>
+
+<tbody>
+	
+<tr>
+	<td style="border: 2px solid black">Deadpool</td>
+	<td style="border: 2px solid black" onclick="updateimage(this.id)" id="dpimg" ><span onmouseover="style.color='blue'; style.cursor='pointer'"  onmouseout="style.color='black'">Deadpool-Firstlook</span></td>
+	<td style="border: 2px solid black" onclick="updatevideo(this.id)" id="dpvid"><span onmouseover="style.color='blue'; style.cursor='pointer'"  onmouseout="style.color='black'">Deadpool-Trailer</span></td>
+	<td style="border: 2px solid black" onclick="updateinfo(this.id)" id="dpinfo"><span onmouseover="style.color='blue'; style.cursor='pointer'"  onmouseout="style.color='black'">Deadpool-Info</span></td>
+</tr>
+
+<tr>
+	<td style="border: 2px solid black">BlackPanther</td>
+	<td style="border: 2px solid black" onclick="updateimage(this.id)" id="bpimg"><span onmouseover="style.color='blue'; style.cursor='pointer'"  onmouseout="style.color='black'">BlackPanther-Firstlook</span></td>
+	<td style="border: 2px solid black" onclick="updatevideo(this.id)" id="bpvid"><span onmouseover="style.color='blue'; style.cursor='pointer'"  onmouseout="style.color='black'">BlackPanther-Trailer</span></td>
+	<td style="border: 2px solid black" onclick="updateinfo(this.id)" id="bpinfo"><span onmouseover="style.color='blue'; style.cursor='pointer'"  onmouseout="style.color='black'">BlackPanther-Info</span></td>
+</tr>
+
+<tr>
+	<td style="border: 2px solid black">Avengers</td>
+	<td style="border: 2px solid black" onclick="updateimage(this.id)" id="aveimg"><span onmouseover="style.color='blue'; style.cursor='pointer'"  onmouseout="style.color='black'">Avengers-Firstlook</span></td>
+	<td style="border: 2px solid black" onclick="updatevideo(this.id)" id="avevid"><span onmouseover="style.color='blue'; style.cursor='pointer'"  onmouseout="style.color='black'">Avengers-Trailer</span></td>
+	<td style="border: 2px solid black" onclick="updateinfo(this.id)" id="aveinfo"><span onmouseover="style.color='blue'; style.cursor='pointer'"  onmouseout="style.color='black'">Avengers-Info</span></td>
+</tr>
+
+</tbody>
+
+
+</table>
+
+<div class="row justify-content-between" >
+<div class="col-md-5">
+	<div class="thumbnail">
+<img src="http://media.comicbook.com/2018/04/deadpool-2-invisible-mutant-1103598-1280x0.jpeg" id="tableimg" style="width: 100%">
+</div>
+</div>
+<div class="col-md-5">
+<iframe src="https://youtube.com/embed/D86RtevtfrA" id="tablevid" style="width:100%; height: 100%"></iframe>
+</div>
+	
+</div>
+<br>
+<div class="card" >
+	<div class="card-header">
+		<h4 id="movietitle">DeadPool</h4>
+	</div>
+	<div class="card-body">
+	<p style="font-family: 'Georgia' " id="tableinfo">Deadpool is a 2016 American superhero film based on the Marvel Comics character of the same name, distributed by 20th Century Fox. It is the eighth installment of the X-Men film series, and the first standalone Deadpool film. Directed by Tim Miller from a screenplay by Rhett Reese and Paul Wernick, the film stars Ryan Reynolds in the title role alongside Morena Baccarin, Ed Skrein, T.J. Miller, Gina Carano, Brianna Hildebrand, and Stefan Kapičić. In Deadpool, Wade Wilson hunts the man who gave him mutant abilities, but also a scarred physical appearance, as the antihero Deadpool.</p>
+</div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
